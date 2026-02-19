@@ -1,3 +1,9 @@
+/*
+ 😉Author      : Vignesh Arjunan
+ 💻Role        : Software Engineer
+ 🐦‍🔥Created On  : 20-02-2026 00:24
+ */
+
 package com.codeplay.auditloggingsystem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;

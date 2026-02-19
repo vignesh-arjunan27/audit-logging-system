@@ -1,3 +1,9 @@
+/*
+ 😉Author      : Vignesh Arjunan
+ 💻Role        : Software Engineer
+ 🐦‍🔥Created On  : 20-02-2026 00:23
+ */
+
 package com.codeplay.auditloggingsystem.entity;
 
 import java.time.LocalDateTime;
