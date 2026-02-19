@@ -64,30 +64,3 @@ public class AuditAspect {
         return result;
     }
 }
-
-// NOTES :
-// 1) @Around("@annotation(auditable)")
-// auditable - This is a variable for our
-// annotation matching AOP's advice, we can give Fully Qualified Name also.
-
-// 2) public Object audit(ProceedingJoinPoint pjp, Auditable auditable) throws
-// Throwable {
-// @Around("@annotation("com.codeplay.auditloggingsystem.audit.Auditable")") -
-// If we used Fully Qualified Name means we can pass PJP only has params, we can
-// neglect the Custom Annotated Class Name has params.
-
-// Option 2 - Disadvantanga (More Code)
-// MethodSignature signature = (MethodSignature) pjp.getSignature();
-// Method method = signature.getMethod();
-
-// // 1) Auditable annotation ah fetch pannu
-// Auditable auditable = method.getAnnotation(Auditable.class);
-
-// // 3️) Ippo properties use pannalaam
-// AuditLog log = new AuditLog();
-// log.setUsername("SYSTEM_USER");
-
-// if (auditable != null) {
-// log.setAction(auditable.action());
-// log.setEntityName(auditable.entity());
-// }
